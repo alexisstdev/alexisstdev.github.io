@@ -1970,7 +1970,7 @@ input:required {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
   z-index: 10;
@@ -1998,9 +1998,9 @@ input:required {
 }
 .single-portfolio-content:hover img,
 .single-portfolio-content:focus img {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
 }
 .single-portfolio-content:hover .hover-content,
 .single-portfolio-content:focus .hover-content {
@@ -2054,7 +2054,7 @@ input:required {
     font-size: 14px;
   }
 }
-i {
+.contact-icon i {
   font-size: 22px;
   margin-right: 20px;
 }
