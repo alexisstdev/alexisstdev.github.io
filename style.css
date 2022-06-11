@@ -72,9 +72,9 @@ a:focus,
 a:hover {
   color: #252525;
   text-decoration: none;
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
   outline: none;
   font-weight: 500;
 }
@@ -151,7 +151,6 @@ ul li {
   width: 100%;
   top: 20px;
   width: 30px;
-  background: #fac213;
   height: 30px;
   line-height: 30px;
 }
@@ -161,9 +160,9 @@ img.mfp-img {
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
 }
 
-button.mfp-close,
 button.mfp-arrow {
-  background: #fac213;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .mfp-bottom-bar {
@@ -171,7 +170,7 @@ button.mfp-arrow {
 }
 
 .mfp-bg {
-  background-color: #000000;
+  background-color: #000000c7;
 }
 
 .bg-transparent {
@@ -444,7 +443,6 @@ input:required {
 }
 .section-heading h2 {
   font-size: 36px;
-  text-transform: capitalize;
   margin-bottom: 5px;
   display: block;
   line-height: 1.2;
@@ -474,9 +472,9 @@ input:required {
   background-color: #fac213;
   color: #ffffff;
   text-align: center;
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
@@ -490,7 +488,7 @@ input:required {
 }
 #scrollUp:focus,
 #scrollUp:hover {
-  background-color: #000000;
+  background-color: #fac013b9;
   color: #ffffff;
 }
 
@@ -510,7 +508,6 @@ input:required {
   display: inline-block;
   padding: 0 30px;
   text-align: center;
-  text-transform: capitalize;
   background-color: transparent;
   color: #ffffff;
   border: 2px solid #fac213;
@@ -538,7 +535,6 @@ input:required {
   color: #636363;
   font-size: 12px;
   font-weight: 500;
-  text-transform: uppercase;
   border-radius: 2px;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -622,7 +618,6 @@ input:required {
   background-color: #fac213;
   font-weight: 600;
   font-size: 14px;
-  text-transform: uppercase;
   text-align: center;
   color: #ffffff;
   cursor: pointer;
@@ -647,7 +642,6 @@ input:required {
 }
 .classy-nav-container .classy-navbar .classynav ul li a {
   font-size: 16px;
-  text-transform: capitalize;
   color: #ffffff;
   font-weight: 500;
   padding: 0 20px;
@@ -684,7 +678,6 @@ input:required {
 .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a,
 .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
   font-size: 14px;
-  text-transform: capitalize;
   height: 42px;
   line-height: 42px;
   padding: 0 30px;
@@ -862,7 +855,9 @@ input:required {
   font-size: 82px;
   display: block;
   margin-bottom: 0;
-  color: #ffffff;
+  background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media only screen and (max-width: 767px) {
   .single-welcome-slide .welcome-text h2 {
@@ -1234,7 +1229,6 @@ input:required {
   padding: 2px 15px;
   border-radius: 2px;
   font-size: 12px;
-  text-transform: uppercase;
   color: #ffffff;
   background-color: #fac213;
   font-weight: 500;
@@ -1333,7 +1327,6 @@ input:required {
 .alime-blockquote h6 {
   font-size: 18px;
   color: #fac213;
-  text-transform: uppercase;
   margin-bottom: 0;
 }
 @media only screen and (max-width: 767px) {
@@ -1595,7 +1588,6 @@ input:required {
 }
 .comment_area .comment-content .comment-meta .post-date {
   font-size: 12px;
-  text-transform: uppercase;
   display: block;
   margin-bottom: 5px;
   font-weight: 300;
@@ -1631,7 +1623,6 @@ input:required {
   font-size: 12px;
   font-weight: 600;
   border: 1px solid #ebebeb;
-  text-transform: uppercase;
   border-radius: 2px;
 }
 .comment_area .comment-content .comment-meta .like:focus,
@@ -1708,7 +1699,6 @@ input:required {
   padding: 2px 15px;
   border-radius: 2px;
   font-size: 12px;
-  text-transform: uppercase;
   color: #ffffff;
   background-color: #fac213;
   top: 15px;
@@ -1829,7 +1819,6 @@ input:required {
   transition-duration: 500ms;
   color: #fac213;
   font-size: 12px;
-  text-transform: uppercase;
 }
 .team-content-area .member-social-info {
   position: relative;
@@ -1970,37 +1959,22 @@ input:required {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
   z-index: 10;
 }
 .single-portfolio-content .hover-content a {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 0;
-  margin-left: -26px;
   z-index: 100;
-  display: inline-block;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background-color: #fac213;
-  text-align: center;
-  line-height: 52px;
-  font-size: 30px;
-  color: #ffffff;
+  width: 100%;
+  height: 100%;
 }
-.single-portfolio-content .hover-content a:hover,
-.single-portfolio-content .hover-content a:focus {
-  background-color: #000000;
-}
+
 .single-portfolio-content:hover img,
 .single-portfolio-content:focus img {
-  -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
 }
 .single-portfolio-content:hover .hover-content,
 .single-portfolio-content:focus .hover-content {
@@ -2076,3 +2050,45 @@ input:required {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.blogBox {
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.blogBox .item {
+  background: #f4f4f4;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  max-height: 425px;
+}
+.blogBox .item:hover {
+  background: #e8e8e8;
+  cursor: pointer;
+}
+.blogBox .item img {
+  width: 100%;
+}
+.blogBox .item p {
+  padding-bottom: 40px;
+}
+.blogBox .item .blogTxt {
+  padding: 25px;
+}
+.blogBox .item h2 {
+  margin: 15px 0;
+  font-family: 'Roboto', sans-serif;
+}
+.blogBox .item .blogCategory a {
+  padding: 5px 10px 2px;
+  border: 1px solid #616161;
+  color: #616161;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.blogBox .item .blogCategory a:hover {
+  background: #616161;
+  color: #fff;
+  text-decoration: none;
+}
