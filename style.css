@@ -361,7 +361,7 @@ input:required {
   z-index: 9999999;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #0d111c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,12 +690,12 @@ input:required {
   color: #fac213;
 }
 
-.classynav ul li.active a {
+.navbar ul li.active a {
   position: relative;
   z-index: 1;
 }
-.classynav ul li.active a::before {
-  width: calc(100% - 40px);
+.navbar ul li.active a::before {
+  width: calc(100% - 15px);
   height: 2px;
   background-color: #fac213;
   position: absolute;
@@ -707,12 +707,12 @@ input:required {
   transform: translateX(-50%);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .classynav ul li.active a::before {
+  .navbar ul li.active a::before {
     display: none;
   }
 }
 @media only screen and (max-width: 767px) {
-  .classynav ul li.active a::before {
+  .navbar ul li.active a::before {
     display: none;
   }
 }
@@ -760,6 +760,7 @@ input:required {
 /* :: 8.0 Hero CSS */
 .welcome-area {
   position: relative;
+  background-color: #0d111d;
   z-index: 1;
 }
 
@@ -2091,4 +2092,90 @@ input:required {
   background: #616161;
   color: #fff;
   text-decoration: none;
+}
+
+a[data-fancybox] img {
+  cursor: pointer;
+}
+
+.fancybox__container {
+  --carousel-button-bg: rgb(0 0 0 / 44%);
+
+  --carousel-button-svg-width: 24px;
+  --carousel-button-svg-height: 24px;
+
+  --carousel-button-svg-stroke-width: 2.5;
+  --carousel-button-svg-filter: none;
+}
+
+.fancybox__nav {
+  --carousel-button-svg-width: 22px;
+  --carousel-button-svg-height: 22px;
+
+  --carousel-button-svg-stroke-width: 3;
+}
+
+.fancybox__nav .carousel__button.is-prev {
+  left: 30px;
+}
+
+.fancybox__nav .carousel__button.is-next {
+  right: 30px;
+}
+
+.carousel__button.is-close {
+  top: 30px;
+  right: 30px;
+}
+
+.fancybox__slide {
+  padding: 0;
+}
+
+.fancybox__thumbs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.fancybox__thumbs .carousel__slide {
+  padding: 20px 10px;
+  overflow: visible;
+}
+
+.fancybox__thumb {
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.26);
+}
+
+.is-nav-selected .fancybox__thumb {
+  transform: scale(1.25);
+}
+
+.is-nav-selected .fancybox__thumb::after {
+  display: none;
+}
+
+.autohide {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+}
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+ul li a:hover,
+ul li a:focus {
+  color: #fac213 !important;
 }

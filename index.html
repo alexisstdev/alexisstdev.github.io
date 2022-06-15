@@ -14,6 +14,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/fancybox.css" />
   </head>
 
   <body>
@@ -23,50 +24,32 @@
     </div>
     <!-- /Preloader -->
 
-    <!-- Header Area Start -->
-    <header class="header-area">
-      <!-- Main Header Start -->
-      <div class="main-header-area">
-        <div class="classy-nav-container breakpoint-off">
-          <div class="container">
-            <!-- Classy Menu -->
-            <nav class="classy-navbar justify-content-between" id="alimeNav">
-              <!-- Logo -->
-              <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt="" /></a>
+    <nav class="autohide navbar navbar-expand-lg navbar-dark bg-dark" id="alimeNav">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Gerardo Sanmiguel</a>
 
-              <!-- Navbar Toggler -->
-              <div class="classy-navbar-toggler">
-                <span class="navbarToggler"><span></span><span></span><span></span></span>
-              </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-              <!-- Menu -->
-              <div class="classy-menu">
-                <!-- Menu Close Button -->
-                <div class="classycloseIcon">
-                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                </div>
-                <!-- Nav Start -->
-                <div class="classynav">
-                  <ul id="nav">
-                    <li class="active"><a href="./index.html">Inicio</a></li>
-                    <li><a href="./about.html">Sobre mí</a></li>
-                    <li><a href="./gallery.html">Galería</a></li>
-                    <li><a href="./contact.html">Contacto</a></li>
-                  </ul>
-                </div>
-                <!-- Nav End -->
-              </div>
-            </nav>
-          </div>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="active"><a class="nav-link" href="./index.html">Inicio</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="./about.html">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="./gallery.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
+          </ul>
         </div>
+        <!-- navbar-collapse.// -->
       </div>
-    </header>
-    <!-- Header Area End -->
+      <!-- container-fluid.// -->
+    </nav>
 
     <!-- Welcome Area Start -->
     <section class="welcome-area">
       <!-- Single Slide -->
-      <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/1.jpg)">
+      <div class="single-welcome-slide bg-img bg-overlay" style="background: url(img/bg-img/1.jpg)">
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <!-- Welcome Text -->
@@ -90,8 +73,8 @@
             <!-- Projects Menu -->
             <div class="alime-projects-menu">
               <div class="portfolio-menu text-center">
-                <button class="btn active" data-filter="*">Todo</button>
-                <button class="btn" data-filter=".boda">Boda</button>
+                <button class="btn active" data-filter=".boda">Boda</button>
+
                 <button class="btn" data-filter=".xv">XV</button>
                 <button class="btn" data-filter=".casual">Casual</button>
                 <button class="btn" data-filter=".newborn">Newborn</button>
@@ -103,386 +86,72 @@
         <div class="row alime-portfolio">
           <!--BODA-->
           <!-- Single Gallery Item -->
-
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
             <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (1).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (1).jpg" class="portfolio-img">+</a>
-              </div>
+              <a href="img/bg-img/boda/boda (1).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (1).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (2).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (2).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (3).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (3).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (4).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (4).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (5).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (5).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (6).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (6).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (7).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (7).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (8).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (8).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (9).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (9).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (10).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (10).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (11).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (11).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (12).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (12).jpg" /> </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
+            <div class="single-portfolio-content">
+              <a href="img/bg-img/boda/boda (13).jpg" data-fancybox="boda"> <img src="img/bg-img/boda/boda (13).jpg" /> </a>
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (2).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (2).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (3).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (3).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (4).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (4).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (5).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (5).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (6).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (6).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (7).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (7).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (8).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (8).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (9).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (9).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (10).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (10).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (11).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (11).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (12).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (12).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (13).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (13).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item boda">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/boda/boda (14).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/boda/boda (14).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <!-- End Single Gallery Item -->
-
-          <!-- Single Gallery Item -->
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (1).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (1).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (2).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (2).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (3).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (3).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (4).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (4).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (5).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (5).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (6).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (6).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (7).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (7).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (8).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (8).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (9).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (9).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (10).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (10).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (11).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (11).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item xv">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/xv/xv (12).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/xv/xv (12).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <!-- End Single Gallery Item -->
-          <!-- Single Gallery Item -->
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item casual">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/casual/casual (1).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/casual/casual (1).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item casual">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/casual/casual (2).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/casual/casual (2).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item casual">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/casual/casual (3).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/casual/casual (3).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item casual">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/casual/casual (4).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/casual/casual (4).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item casual">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/casual/casual (5).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/casual/casual (5).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item casual">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/casual/casual (6).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/casual/casual (6).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item casual">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/casual/casual (7).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/casual/casual (7).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item casual">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/casual/casual (8).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/casual/casual (8).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item casual">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/casual/casual (9).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/casual/casual (9).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item casual">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/casual/casual (10).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/casual/casual (10).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- End Single Gallery Item -->
-          <!-- Single Gallery Item -->
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item newborn">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/newborn/newborn (1).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/newborn/newborn (1).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item newborn">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/newborn/newborn (2).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/newborn/newborn (2).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item newborn">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/newborn/newborn (3).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/newborn/newborn (3).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item newborn">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/newborn/newborn (4).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/newborn/newborn (4).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item newborn">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/newborn/newborn (5).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/newborn/newborn (5).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item newborn">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/newborn/newborn (6).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/newborn/newborn (6).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item newborn">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/newborn/newborn (7).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/newborn/newborn (7).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item newborn">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/newborn/newborn (8).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/newborn/newborn (8).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item newborn">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/newborn/newborn (9).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/newborn/newborn (9).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-30 single_gallery_item newborn">
-            <div class="single-portfolio-content">
-              <img src="img/bg-img/newborn/newborn (10).jpg" alt="" />
-              <div class="hover-content">
-                <a href="img/bg-img/newborn/newborn (10).jpg" class="portfolio-img">+</a>
-              </div>
-            </div>
-          </div>
           <!-- End Single Gallery Item -->
         </div>
         <div class="row">
@@ -529,17 +198,39 @@
       </div>
       <!-- About Us Area End -->
     </footer>
-    <!-- Footer Area End -->
-
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
     <script src="js/jquery.min.js"></script>
-
     <script src="js/alime.bundle.js"></script>
-    <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        el_autohide = document.querySelector('.autohide');
 
-    <!-- load -->
+        // add padding-top to bady (if necessary)
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+
+        if (el_autohide) {
+          var last_scroll_top = 0;
+          window.addEventListener('scroll', function () {
+            let scroll_top = window.scrollY;
+            if (scroll_top < last_scroll_top) {
+              el_autohide.classList.remove('scrolled-down');
+              el_autohide.classList.add('scrolled-up');
+            } else {
+              el_autohide.classList.remove('scrolled-up');
+              el_autohide.classList.add('scrolled-down');
+            }
+            last_scroll_top = scroll_top;
+          });
+          // window.addEventListener
+        }
+        // if
+      });
+      // DOMContentLoaded  end
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
     <script>
       /*       $(document).ready(function () {
         $('.moreBox').slice(0, 999).hide();
