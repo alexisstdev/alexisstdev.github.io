@@ -103,7 +103,6 @@
   // *********************************
   // :: 5.0 Masonary Gallery Active Code
   // *********************************
-
   if ($.fn.imagesLoaded) {
     $('.alime-portfolio').imagesLoaded(function () {
       // filter items on button click
@@ -115,6 +114,7 @@
       });
       // init Isotope
       var $grid = $('.alime-portfolio').isotope({
+        filter: '.boda',
         itemSelector: '.single_gallery_item',
         percentPosition: true,
         masonry: {

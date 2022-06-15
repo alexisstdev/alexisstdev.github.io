@@ -1218,7 +1218,6 @@ input:required {
   color: #fac213;
 }
 .breadcrumb-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  content: '\f105';
   color: #ffffff;
   font-family: 'FontAwesome';
 }
