@@ -104,6 +104,7 @@
 
         <div class="row alime-portfolio">
           <!--Boda-->
+
           <div class="col-12 col-sm-6 col-lg-4 single_gallery_item boda mb-30">
             <div class="single-portfolio-content">
               <a href="https://lipsum.app/id/64/2560x1440" data-fancybox="boda"> <img loading="lazy" src="img/bg-img/boda/boda (1).jpg" /> </a>
@@ -378,6 +379,20 @@
     <script src="js/default-assets/active.js"></script>
     <script src="js/fancybox.umd.js"></script>
     <script src="https://kit.fontawesome.com/b152687bba.js" crossorigin="anonymous"></script>
+    <script>
+      const imageArray = [];
+
+      for (var i = 1; i <= 13; i++) {
+        const obj = {
+          src: 'img/bg-img/boda/boda (' + i + ').jpg',
+          thumb: 'img/bg-img/boda/boda (' + i + ').jpg',
+        };
+        imageArray.push(obj);
+      }
+
+      Fancybox.show(imageArray);
+      console.log('dasdasdasfsdf');
+    </script>
     <script>
       Fancybox.bind('[data-fancybox]', {
         Thumbs: false,
