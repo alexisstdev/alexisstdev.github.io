@@ -1,12 +1,12 @@
 {
-  "name": "alime-photography-html-template",
+  "name": "sanmiguel-fotografia",
   "version": "1.0.0",
-  "description": "Alime - Photography HTML Template",
+  "description": "Sanmiguel Fotografía",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
   },
-  "author": "colorlib",
+  "author": "alexis",
   "license": "CC-BY-3.0",
   "devDependencies": {
     "gulp": "^3.9.1",

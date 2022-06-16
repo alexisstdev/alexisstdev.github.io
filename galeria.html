@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="" />
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Title -->
-    <title>Gerardo Sanmiguel | Galería</title>
+    <title>Galería | Gerardo Sanmiguel</title>
 
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/favicon.png" />
@@ -54,9 +54,9 @@
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
-            <li class="active"><a class="nav-link" href="gallery.html">Galería</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
+            <li class="active"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
         </div>
         <!-- navbar-collapse.// -->
@@ -372,36 +372,25 @@
     </div>
     <!-- Gallery Area End -->
 
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
     <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
     <script src="js/alime.bundle.js"></script>
-    <!-- Active -->
     <script src="js/default-assets/active.js"></script>
     <script src="js/fancybox.umd.js"></script>
+    <script src="https://kit.fontawesome.com/b152687bba.js" crossorigin="anonymous"></script>
     <script>
       Fancybox.bind('[data-fancybox]', {
         Thumbs: false,
-        Toolbar: false,
-        closeButton: 'top',
+        Toolbar: {
+          display: ['fullscreen', 'close'],
+        },
         Image: {
           zoom: false,
         },
       });
-    </script>
-    <script>
       document.addEventListener('DOMContentLoaded', function () {
         el_autohide = document.querySelector('.autohide');
-
-        // add padding-top to bady (if necessary)
         navbar_height = document.querySelector('.navbar').offsetHeight;
         document.body.style.paddingTop = navbar_height + 'px';
-
         if (el_autohide) {
           var last_scroll_top = 0;
           window.addEventListener('scroll', function () {
@@ -415,12 +404,8 @@
             }
             last_scroll_top = scroll_top;
           });
-          // window.addEventListener
         }
-        // if
       });
-      // DOMContentLoaded  end
     </script>
-    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
